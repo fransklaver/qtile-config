@@ -89,7 +89,7 @@ screens = [
                         widget.Volume(foreground=bar_font_color),
                         widget.Battery(foreground=bar_font_color),
                         widget.Systray(foreground=bar_font_color),
-                        widget.Clock('%Y-%m-%d %a %I:%M %p',foreground=bar_font_color),
+                        widget.Clock('%a %d %b %Y %H:%M',foreground=bar_font_color),
                     ],
                     15,
                 ),
