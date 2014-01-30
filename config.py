@@ -81,7 +81,6 @@ screens = [
     Screen(
         top = bar.Bar(
                     [
-                        widget.CurrentLayout(),
 			widget.Battery(),
                         widget.Prompt(),
                         widget.WindowName(),
