@@ -81,10 +81,10 @@ screens = [
     Screen(
         top = bar.Bar(
                     [
-			widget.Battery(),
+                        widget.Battery(),
                         widget.Prompt(),
                         widget.WindowName(),
-			widget.Volume(),
+                        widget.Volume(),
                         widget.Systray(),
                         widget.Clock('%Y-%m-%d %a %I:%M %p'),
                     ],
