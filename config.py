@@ -3,6 +3,9 @@ from libqtile.command import lazy
 from libqtile import layout, bar, widget
 
 mod = "mod1"
+bar_font_color = "#3985a4"
+color_unfocus = "#888888"
+color_focus = "#eeeeee"
 
 keys = [
     Key([mod], "k", lazy.layout.down()),
@@ -72,7 +75,7 @@ dgroups_key_binder = None
 dgroups_app_rules = []
 
 layouts = [
-    layout.MonadTall(),
+    layout.MonadTall(border_focus=color_focus, border_normal=color_unfocus, border_width=1),
     layout.Max(),
     layout.Stack(stacks=2)
 ]
@@ -81,12 +84,12 @@ screens = [
     Screen(
         top = bar.Bar(
                     [
-                        widget.Battery(),
-                        widget.Prompt(),
-                        widget.WindowName(),
-                        widget.Volume(),
-                        widget.Systray(),
-                        widget.Clock('%Y-%m-%d %a %I:%M %p'),
+                        widget.Battery(foreground=bar_font_color),
+                        widget.Prompt(foreground=bar_font_color),
+                        widget.WindowName(foreground=bar_font_color),
+                        widget.Volume(foreground=bar_font_color),
+                        widget.Systray(foreground=bar_font_color),
+                        widget.Clock('%Y-%m-%d %a %I:%M %p',foreground=bar_font_color),
                     ],
                     15,
                 ),
