@@ -18,7 +18,7 @@ keys = [
     # Switch window focus to other pane(s) of stack
     Key(
         [mod], "Tab",
-        lazy.layout.next()
+        lazy.layout.down()
     ),
 
     # Swap panes of split stack
