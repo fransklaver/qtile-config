@@ -48,6 +48,11 @@ keys = [
 
     Key([mod, "control"], "r", lazy.restart()),
     Key([mod], "r", lazy.spawncmd()),
+    Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer -c 0 -q set Master 2%+")),
+    Key([], "XF86AudioLowerVolume", lazy.spawn("amixer -c 0 -q set Master 2%-")),
+    Key([], "XF86AudioMute", lazy.spawn("amixer -c 0 -q set Master toggle")),
+    Key([mod], "equal", lazy.spawn("amixer -c 0 -q set Master 2%+")),
+    Key([mod], "minus", lazy.spawn("amixer -c 0 -q set Master 2%-")),
 ]
 
 groups = [
