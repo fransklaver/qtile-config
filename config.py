@@ -37,8 +37,8 @@ keys = [
         [mod, "shift"], "Return",
         lazy.layout.toggle_split()
     ),
-    Key([mod], "i",      lazy.to_screen(1)),
-    Key([mod], "u",      lazy.to_screen(0)),
+    Key([mod], "e",      lazy.to_screen(1)),
+    Key([mod], "w",      lazy.to_screen(0)),
     Key([mod], "Return", lazy.spawn("urxvt")),
     Key([mod, "shift"], 'u', lazy.spawn("urxvt")),
 
